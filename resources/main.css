@@ -1,12 +1,13 @@
 body{
     background-color: #F6FAFD;
     font-family: 'Roboto', sans-serif;
-    max-width: 1024px;
-    margin: auto;
 }
+
 .o-claculator,.o-result-container{
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 h1{
     color: #2F4251;
@@ -23,8 +24,11 @@ input[type=number]{
     background-color: #F6FAFD;
     border-bottom: 0.0625rem solid #52729E;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 400;
     color: #2F4251;
+}
+.o-Operands,.o-operation{
+    margin: 3rem 0 0 0;
 }
 .o-sel-operation{
     width: 17.3rem;
@@ -32,24 +36,56 @@ input[type=number]{
     background-color: #2F4251;
     color: #ffffff;
     font-size: 1.5rem;
+    font-weight: 400;
     text-align-last: center;
     border: none;
     border-radius: 1.9rem;
+}
+.o-result-container{
+    margin: 2rem;
 }
 .o-result-button{
     width: 9.3rem;
     height: 3rem;
     background-color: #F70025;
+    opacity: 0.8;
     color: #ffffff;
     font-size: 3rem;
     font-weight: bold;
     border-radius: 1.9rem;
     border: none;
-    margin: 2rem;
+    margin: 1rem;
+}
+.o-result-button:hover{
+    opacity: 1;
+    box-shadow: 0px 4px 25px rgba(100, 168, 221, 0.23);
 }
 .o-result-card{
-    padding: 5rem;
+    padding: 1rem 6rem 1rem 2rem;
     background-color: #ffffff;
     border-radius: 1.3rem;
     box-shadow: 0px 4px 25px rgba(100, 168, 221, 0.23);
+}
+#resultTitle{
+    margin: 1rem 0 0 0;
+    text-align: left;
+}
+#resultValue{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+@media only screen and (max-width:1000px){
+    .o-result-button{
+        opacity: 1;
+    }
+    .o-result-card{
+        padding: 1rem 6rem;
+    }
+    #resultTitle{
+        text-align: center;
+    }
+    .o-result-container{
+        flex-direction: column;
+    }
 }
