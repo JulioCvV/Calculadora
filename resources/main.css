@@ -1,0 +1,55 @@
+body{
+    background-color: #F6FAFD;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    margin: auto;
+}
+.o-claculator,.o-result-container{
+    display: flex;
+    align-items: center;
+}
+h1{
+    color: #2F4251;
+}
+#uao{
+    font-weight: 400;
+}
+p{
+    color: #BBC7D6;
+}
+input[type=number]{
+    width: 17.3rem;
+    border: none;
+    background-color: #F6FAFD;
+    border-bottom: 0.0625rem solid #52729E;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2F4251;
+}
+.o-sel-operation{
+    width: 17.3rem;
+    height: 3rem;
+    background-color: #2F4251;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align-last: center;
+    border: none;
+    border-radius: 1.9rem;
+}
+.o-result-button{
+    width: 9.3rem;
+    height: 3rem;
+    background-color: #F70025;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 1.9rem;
+    border: none;
+    margin: 2rem;
+}
+.o-result-card{
+    padding: 5rem;
+    background-color: #ffffff;
+    border-radius: 1.3rem;
+    box-shadow: 0px 4px 25px rgba(100, 168, 221, 0.23);
+}
