@@ -3,12 +3,43 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>UAO-Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <div id="calculatorContainer" class="o-claculator">
+        <div id="operationContainer" class="o-operation-container">
+            <div id="appName">
+                <h1 id="uao">UAO <br><b>CALCULATOR</b></h1>
+            </div>
+            <div id="number1" class="o-number">
+                <p>Número 1</p>
+                <input type="number" id="number1" name="number1">
+            </div>
+            <div id="number2" class="o-number">
+                <p>Número 2</p>
+                <input type="number" id="number2" name="number2">
+            </div>
+            <div id="operation" class="o-operation">
+                <p>Operación</p>
+                <select id="operations" class="o-sel-operation">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicación">Multiplicación</option>
+                    <option value="división">División</option>
+                </select>
+            </div>
+        </div>
+        <div id="resultContainer" class="o-result-container">
+            <button type="button" class="o-result-button">=</button>
+            <div id="resultCard" class="o-result-card">
+                <p>Resultado</p>
+                <h1>valor</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
