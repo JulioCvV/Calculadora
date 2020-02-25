@@ -1,24 +1,36 @@
-var nuNumero1= parseFloat(document.getElementById("number1").value);
-var nuNumero2= parseFloat(document.getElementById("number2").value);
-var stIndexOperacion=document.getElementById("operations").selectedIndex;
-var stResultado;
+var nuNumero1;
+var nuNumero2;
+var stOperation=0;
+function handleInput(stInput){
+    var nuValue= parseFloat(document.getElementById(stInput).value);
+    if(stInput =="number1"){
+        nuNumero1 = nuValue;
+    }else{
+        nuNumero2 = nuValue;
+    }
+    calcular();
+}
+
+function handleSelect(){
+    stOperation = document.getElementById("operations").selectedIndex;
+    calcular(stOperation);
+}
 
 function calcular(){
-    if(nuNumero2==0){
-        alert("Indeterminado");
-    }
-    if(stIndexOperacion==0){
+    var stResultado;
+    if(stOperation==0){
         stResultado= nuNumero1 + nuNumero2;
         document.getElementById("resultValue").innerHTML = stResultado;
-    }else if(stIndexOperacion==1){
+    }else if(stOperation==1){
         stResultado= nuNumero1 - nuNumero2;
         document.getElementById("resultValue").innerHTML = stResultado;
-    }else if(stIndexOperacion==2){
+    }else if(stOperation==2){
         stResultado= nuNumero1 * nuNumero2;
         document.getElementById("resultValue").innerHTML = stResultado;
-    }else if(stIndexOperacion==3){
+    }else if(stOperation==3){
         stResultado= nuNumero1 / nuNumero2;
         document.getElementById("resultValue").innerHTML = stResultado;
     }
 }
+
 
