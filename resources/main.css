@@ -82,7 +82,7 @@ input[type=number]{
     .o-result-card{
         padding: 1rem 6rem;
     }
-    #resultTitle{
+    #resultTitle,#resultValue{
         text-align: center;
     }
     .o-result-container{
