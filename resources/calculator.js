@@ -1,5 +1,5 @@
-var nuNumero1;
-var nuNumero2;
+var nuNumero1=0;
+var nuNumero2=0;
 var stOperation=0;
 function handleInput(stInput){
     var nuValue= parseFloat(document.getElementById(stInput).value);
