@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css">
+    <script src="resources/calculator.js"></script>
 </head>
 <body>
     <div id="calculatorContainer" class="o-claculator">
@@ -17,16 +18,16 @@
             <div id="dataOperands" class="o-Operands">
                 <div id="number1Item" class="o-number">
                     <p>Número 1</p>
-                    <input type="number" id="number1">
+                    <input type="number" id="number1" onchange="handleInput('number1')">
                 </div>
                 <div id="number2Item" class="o-number">
                     <p>Número 2</p>
-                    <input type="number" id="number2">
+                    <input type="number" id="number2" onchange="handleInput('number2')">
                 </div>
             </div>
             <div id="operation" class="o-operation">
                 <p>Operación</p>
-                <select id="operations" class="o-sel-operation">
+                <select id="operations" class="o-sel-operation" onchange="handleSelect()">
                     <option value="suma">Suma</option>
                     <option value="resta">Resta</option>
                     <option value="multiplicación">Multiplicación</option>
@@ -35,13 +36,12 @@
             </div>
         </div>
         <div id="resultContainer" class="o-result-container">
-            <button type="button" onclick="calcular();" class="o-result-button">=</button>
+            <button type="button" class="o-result-button">=</button>
             <div id="resultCard" class="o-result-card">
                 <p id="resultTitle">Resultado</p>
                 <h1 id="resultValue">valor</h1>
             </div>
         </div>
     </div>
-    <script src="resources/calculator.js"></script>
 </body>
 </html>
